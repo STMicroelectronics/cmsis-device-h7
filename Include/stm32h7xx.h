@@ -89,10 +89,6 @@
         devices, you can define the device in your toolchain compiler preprocessor.
   */
 
-#if defined(DUAL_CORE) && !defined(CORE_CM4) && !defined(CORE_CM7)
- #error "Dual core device, please select CORE_CM4 or CORE_CM7"
-#endif
-
 #if !defined  (USE_HAL_DRIVER)
 /**
  * @brief Comment the line below if you will not use the peripherals drivers.
@@ -168,6 +164,10 @@
   #include "stm32h723xx.h"
 #else
  #error "Please select first the target STM32H7xx device used in your application (in stm32h7xx.h file)"
+#endif
+
+#if defined(DUAL_CORE) && !defined(CORE_CM4) && !defined(CORE_CM7)
+#error "Dual core device, please select CORE_CM4 or CORE_CM7"
 #endif
 
 /**
