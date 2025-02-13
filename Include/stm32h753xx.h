@@ -19076,6 +19076,9 @@ typedef struct
 #define QUADSPI_CCR_SIOO_Pos             (28U)
 #define QUADSPI_CCR_SIOO_Msk             (0x1UL << QUADSPI_CCR_SIOO_Pos)         /*!< 0x10000000 */
 #define QUADSPI_CCR_SIOO                 QUADSPI_CCR_SIOO_Msk                    /*!< SIOO: Send Instruction Only Once Mode */
+#define QUADSPI_CCR_FRCM_Pos             (29U)
+#define QUADSPI_CCR_FRCM_Msk             (0x1UL << QUADSPI_CCR_FRCM_Pos)         /*!< 0x20000000 */
+#define QUADSPI_CCR_FRCM                 QUADSPI_CCR_FRCM_Msk                    /*!< FRCM: Free-running clock mode */
 #define QUADSPI_CCR_DHHC_Pos             (30U)
 #define QUADSPI_CCR_DHHC_Msk             (0x1UL << QUADSPI_CCR_DHHC_Pos)         /*!< 0x40000000 */
 #define QUADSPI_CCR_DHHC                 QUADSPI_CCR_DHHC_Msk                    /*!< DHHC: DDR hold half cycle */
