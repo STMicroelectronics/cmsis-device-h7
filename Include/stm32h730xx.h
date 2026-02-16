@@ -16939,10 +16939,10 @@ typedef struct
 #define RNG_CR_CLKDIV_Pos           (16U)
 #define RNG_CR_CLKDIV_Msk           (0xFUL << RNG_CR_CLKDIV_Pos)               /*!< 0x000F0000 */
 #define RNG_CR_CLKDIV               RNG_CR_CLKDIV_Msk
-#define RNG_CR_CLKDIV_0             (0x1U << RNG_CR_CLKDIV_Pos)                /*!< 0x00010000 */
-#define RNG_CR_CLKDIV_1             (0x2U << RNG_CR_CLKDIV_Pos)                /*!< 0x00020000 */
-#define RNG_CR_CLKDIV_2             (0x4U << RNG_CR_CLKDIV_Pos)                /*!< 0x00040000 */
-#define RNG_CR_CLKDIV_3             (0x8U << RNG_CR_CLKDIV_Pos)                /*!< 0x00080000 */
+#define RNG_CR_CLKDIV_0             (0x1UL << RNG_CR_CLKDIV_Pos)                /*!< 0x00010000 */
+#define RNG_CR_CLKDIV_1             (0x2UL << RNG_CR_CLKDIV_Pos)                /*!< 0x00020000 */
+#define RNG_CR_CLKDIV_2             (0x4UL << RNG_CR_CLKDIV_Pos)                /*!< 0x00040000 */
+#define RNG_CR_CLKDIV_3             (0x8UL << RNG_CR_CLKDIV_Pos)                /*!< 0x00080000 */
 #define RNG_CR_RNG_CONFIG1_Pos      (20U)
 #define RNG_CR_RNG_CONFIG1_Msk      (0x3FUL << RNG_CR_RNG_CONFIG1_Pos)         /*!< 0x03F00000 */
 #define RNG_CR_RNG_CONFIG1          RNG_CR_RNG_CONFIG1_Msk
@@ -20380,7 +20380,7 @@ typedef struct
 
 /*******************  Bit definition for TIM_CCR5 register  *******************/
 #define TIM_CCR5_CCR5_Pos         (0U)
-#define TIM_CCR5_CCR5_Msk         (0xFFFFFFFFUL << TIM_CCR5_CCR5_Pos)          /*!< 0xFFFFFFFF */
+#define TIM_CCR5_CCR5_Msk         (0xFFFFUL << TIM_CCR5_CCR5_Pos)              /*!< 0xFFFF */
 #define TIM_CCR5_CCR5             TIM_CCR5_CCR5_Msk                            /*!<Capture/Compare 5 Value */
 #define TIM_CCR5_GC5C1_Pos        (29U)
 #define TIM_CCR5_GC5C1_Msk        (0x1UL << TIM_CCR5_GC5C1_Pos)                /*!< 0x20000000 */
@@ -24185,7 +24185,7 @@ typedef struct
 
 /******************************** HSEM Instances *******************************/
 #define IS_HSEM_ALL_INSTANCE(INSTANCE) ((INSTANCE) == HSEM)
-#define HSEM_CPU1_COREID         (0x00000003U) /* Semaphore Core CM7 ID */
+#define HSEM_CPU1_COREID         (0x00000003UL) /* Semaphore Core CM7 ID */
 #define HSEM_CR_COREID_CPU1      (HSEM_CPU1_COREID << HSEM_CR_COREID_Pos)
 #define HSEM_CR_COREID_CURRENT   (HSEM_CPU1_COREID << HSEM_CR_COREID_Pos)
 

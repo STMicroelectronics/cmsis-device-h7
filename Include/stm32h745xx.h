@@ -20572,7 +20572,7 @@ typedef struct
 
 /*******************  Bit definition for TIM_CCR5 register  *******************/
 #define TIM_CCR5_CCR5_Pos         (0U)
-#define TIM_CCR5_CCR5_Msk         (0xFFFFFFFFUL << TIM_CCR5_CCR5_Pos)          /*!< 0xFFFFFFFF */
+#define TIM_CCR5_CCR5_Msk         (0xFFFFUL << TIM_CCR5_CCR5_Pos)              /*!< 0xFFFF */
 #define TIM_CCR5_CCR5             TIM_CCR5_CCR5_Msk                            /*!<Capture/Compare 5 Value */
 #define TIM_CCR5_GC5C1_Pos        (29U)
 #define TIM_CCR5_GC5C1_Msk        (0x1UL << TIM_CCR5_GC5C1_Pos)                /*!< 0x20000000 */
@@ -26783,8 +26783,8 @@ typedef struct
 /******************************** HSEM Instances *******************************/
 #define IS_HSEM_ALL_INSTANCE(INSTANCE) ((INSTANCE) == HSEM)
 /********************  Bit definition for HSEM_CR register  *****************/
-#define HSEM_CPU1_COREID    (0x00000003U) /* Semaphore Core CM7 ID */
-#define HSEM_CPU2_COREID    (0x00000001U) /* Semaphore Core CM4 ID */
+#define HSEM_CPU1_COREID    (0x00000003UL) /* Semaphore Core CM7 ID */
+#define HSEM_CPU2_COREID    (0x00000001UL) /* Semaphore Core CM4 ID */
 #define HSEM_CR_COREID_CPU1      (HSEM_CPU1_COREID << HSEM_CR_COREID_Pos)
 #define HSEM_CR_COREID_CPU2      (HSEM_CPU2_COREID << HSEM_CR_COREID_Pos)
 #if defined(CORE_CM4)
